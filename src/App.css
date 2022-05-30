@@ -1,6 +1,7 @@
 .app {
     display: flex;
     width: 100%;
+    max-width: 100%;
 }
 
 .app__rightSection {
@@ -10,4 +11,17 @@
    margin-top: 10px;
    margin-right: 10px;
    max-width: 80%;
+}
+
+@media (max-width: 480px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .app__rightSection {
+        width: 100%;
+        max-width: 100%;
+    }
 }
