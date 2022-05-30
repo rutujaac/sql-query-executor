@@ -91,10 +91,10 @@ const getSelectedFile = (e) => {
       <div className="queryExecutor__header">
         <button className="queryExecutor__purpleBtn" onClick={runQuery}>Run</button>
         <button className="queryExecutor__greyBtn" onClick={clearInput}>Clear</button>
-        <input type="file" ref={inputRef} style={{display: 'none'}} onChange={getSelectedFile} />
+        <input type="file" ref={inputRef} style={{display: 'none'}} accept=".txt" onChange={getSelectedFile} />
         <button className="queryExecutor__greyBtn queryExecutor__importBtn" onClick={inputFile}>Import</button>
       </div>
-      <textarea className="queryExecutor__queryInput" placeholder="Query..." files=".txt" id="queryInputField" value={query} onChange={(event) => {
+      <textarea className="queryExecutor__queryInput" placeholder="Query..." id="queryInputField" value={query} onChange={(event) => {
         setQuery(event.target.value)
       }}></textarea>
       
