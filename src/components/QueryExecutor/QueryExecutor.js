@@ -7,7 +7,7 @@ import Papa from 'papaparse'
 const QueryExecutor = () => {
 
   const [query, setQuery] = useState("")
-  const [{currentQuery, result, statusMessage}, dispatch] = useStateValue()
+  const [{currentQuery}, dispatch] = useStateValue()
   const inputRef = useRef(null)
 
   // Update query state value if currentQuery in context updates 

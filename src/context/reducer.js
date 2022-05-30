@@ -13,21 +13,8 @@ function reducer(state, action) {
                 result: action.result,
                 statusMessage: action.statusMessage
             }
-            break
-        case "SAVE_QUERY":
-            const savedQuery = state.savedQueries.filter(item => item == action.queryString)[0]
-            console.log(savedQuery)
-            if(!savedQuery) {
-                console.log("saving query")
-            return {
-                ...state,
-                savedQueries: [...state.savedQueries, action.queryString]
-                }
-            }
-            return state
         default:
             return state
-            break
     }
 }
 
