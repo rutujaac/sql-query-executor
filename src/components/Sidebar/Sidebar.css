@@ -1,0 +1,35 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background-color: #ffffff;
+    height: 100vh;
+    margin-right: 10px;
+}
+
+.sidebar__optionLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #19191a;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.sidebar__dropdown {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #f3f3f3;
+}
+
+.sidebar__queries {
+   background-color: #B7B5E4;
+   padding: 20px;
+}
+
+.sidebar__queries:hover {
+    background-color: #B7B5E4;
+}

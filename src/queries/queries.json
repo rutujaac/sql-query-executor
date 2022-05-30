@@ -1,0 +1,33 @@
+[
+    {
+        "query": "select * from customers;",
+        "result": "customers",
+        "statusMsg": "Fetched table (customers) successfully"
+    },
+    {
+        "query": "select * from orders",
+        "result": "orders",
+        "statusMsg": "Fetched table (orders) successfully"
+    },
+    {
+        "query": "select employeeID,lastName,firstName,title,titleOfCourtesy,birthDate,hireDate,address,city,region,postalCode,country,homePhone,extension,photo,notes,reportsTo,photoPath from employees",
+        "statusMsg" : "Fetched table (employees) successfully",
+        "result": "employees"
+    },
+    {
+        "query": "update table products set productName=\"Tofu\" where productID=\"1\"",
+        "statusMsg": "Updated 1 column successfully"
+    },
+    {
+        "query": "insert values(10, 20, \"Alex\") into customers",
+        "statusMsg": "Inserted 1 row(s) successfully"
+    },
+    {
+        "query": "drop customers",
+        "statusMsg": "Table customers dropped successfully"
+    },
+    {
+        "query": "create table inventory(id int, product varchar(20))",
+        "statusMsg": "Table inventory created successfully"
+    }
+]
