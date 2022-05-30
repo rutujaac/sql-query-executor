@@ -1,4 +1,4 @@
-import React, { useState, Suspense, lazy, useEffect } from 'react'
+import React from 'react'
 import './Sidebar.css'
 import queryList from '../../queries/queries.json'
 import { useStateValue } from '../../context/StateProvider'
@@ -6,8 +6,7 @@ import Papa from 'papaparse'
 
 const Sidebar = () => {
 
-  const [rowData, setRowData] = useState([])
-  const [{currentQuery, result, statusMessage}, dispatch] = useStateValue();
+  const [{currentQuery}, dispatch] = useStateValue();
 
   const toggleQueries = (event) => {
    if(event.target.value !== "Select") {
