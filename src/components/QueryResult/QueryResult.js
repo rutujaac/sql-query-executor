@@ -4,7 +4,7 @@ import './QueryResult.css'
 
 const QueryResult = () => {
 
-    const [{currentQuery,result,statusMessage}, dispatch] = useStateValue()
+    const [{result,statusMessage}] = useStateValue()
 
     const [columns, setColumns] = useState([])
 
